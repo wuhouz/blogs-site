@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/11/13/使用Github-Pages和hexo搭建博客/index.html">
 <meta property="og:site_name" content="Jen">
 <meta property="og:description" content="使用Github Pages和hexo搭建博客相关文档地址：  Hexo Github Pages  新建github仓库登录GitHub账号，新建一个名为 username.github.io 的仓库（此处username为你的GitHub用户名） 设置github pagesgithub上进入刚刚新建的项目，点击settings进入设置页面，找到GitHub Pages选项，将source设">
-<meta property="og:updated_time" content="2017-11-13T11:53:22.000Z">
+<meta property="og:updated_time" content="2017-11-13T11:57:30.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用Github Pages和hexo搭建博客">
 <meta name="twitter:description" content="使用Github Pages和hexo搭建博客相关文档地址：  Hexo Github Pages  新建github仓库登录GitHub账号，新建一个名为 username.github.io 的仓库（此处username为你的GitHub用户名） 设置github pagesgithub上进入刚刚新建的项目，点击settings进入设置页面，找到GitHub Pages选项，将source设">
@@ -99,11 +99,11 @@
 <ol>
 <li>在目标文件夹初始化hexo</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init \&lt;folder&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init &lt;folder&gt;</span><br></pre></td></tr></table></figure>
 <ol>
 <li>进入该文件夹</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd \&lt;folder&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd &lt;folder&gt;</span><br></pre></td></tr></table></figure>
 <ol>
 <li>安装依赖</li>
 </ol>
@@ -137,10 +137,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h2><p>注：若title中包含空格，需要用引号把title引起来<br><code>hexo new [layout] \&lt;title&gt;</code></p>
-<h2 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h2><blockquote>
-<p>hexo generate</p>
-</blockquote>
+<h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h2><p>注：若title中包含空格，需要用引号把title引起来<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure></p>
+<h2 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -159,12 +157,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="发布草稿"><a href="#发布草稿" class="headerlink" title="发布草稿"></a>发布草稿</h2><blockquote>
-<p>hexo publish [layout] \<filename></filename></p>
-</blockquote>
-<h2 id="启动本地服务器"><a href="#启动本地服务器" class="headerlink" title="启动本地服务器"></a>启动本地服务器</h2><blockquote>
-<p>hexo server </p>
-</blockquote>
+<h2 id="发布草稿"><a href="#发布草稿" class="headerlink" title="发布草稿"></a>发布草稿</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo publish [layout] &lt;filename&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="启动本地服务器"><a href="#启动本地服务器" class="headerlink" title="启动本地服务器"></a>启动本地服务器</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -187,10 +181,8 @@
 </tr>
 </tbody>
 </table>
-<p>eg: hexo server -p 5000</p>
-<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><blockquote>
-<p>hexo deploy</p>
-</blockquote>
+<p>eg:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server -p 5000</span><br></pre></td></tr></table></figure></p>
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -205,9 +197,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="渲染"><a href="#渲染" class="headerlink" title="渲染"></a>渲染</h2><blockquote>
-<p>hexo render \<file1> [file2] …</file1></p>
-</blockquote>
+<h2 id="渲染"><a href="#渲染" class="headerlink" title="渲染"></a>渲染</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo render &lt;file1&gt; [file2] ...</span><br></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -222,23 +212,15 @@
 </tr>
 </tbody>
 </table>
-<h2 id="从别的博客项目中迁移内容"><a href="#从别的博客项目中迁移内容" class="headerlink" title="从别的博客项目中迁移内容"></a>从别的博客项目中迁移内容</h2><blockquote>
-<p>hexo migrate \<type></type></p>
-</blockquote>
-<h2 id="清除缓存文件和生成文件（db-json、public）"><a href="#清除缓存文件和生成文件（db-json、public）" class="headerlink" title="清除缓存文件和生成文件（db.json、public）"></a>清除缓存文件和生成文件（db.json、public）</h2><blockquote>
-<p>hexo clean</p>
-</blockquote>
-<h2 id="罗列出所有的路由"><a href="#罗列出所有的路由" class="headerlink" title="罗列出所有的路由"></a>罗列出所有的路由</h2><blockquote>
-<p>hexo list \<type></type></p>
-</blockquote>
-<h2 id="查看hexo版本信息"><a href="#查看hexo版本信息" class="headerlink" title="查看hexo版本信息"></a>查看hexo版本信息</h2><blockquote>
-<p>hexo version</p>
-</blockquote>
+<h2 id="从别的博客项目中迁移内容"><a href="#从别的博客项目中迁移内容" class="headerlink" title="从别的博客项目中迁移内容"></a>从别的博客项目中迁移内容</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo migrate &lt;type&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="清除缓存文件和生成文件（db-json、public）"><a href="#清除缓存文件和生成文件（db-json、public）" class="headerlink" title="清除缓存文件和生成文件（db.json、public）"></a>清除缓存文件和生成文件（db.json、public）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+<h2 id="罗列出所有的路由"><a href="#罗列出所有的路由" class="headerlink" title="罗列出所有的路由"></a>罗列出所有的路由</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo list \&lt;type&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="查看hexo版本信息"><a href="#查看hexo版本信息" class="headerlink" title="查看hexo版本信息"></a>查看hexo版本信息</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo version</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/11/13/使用Github-Pages和hexo搭建博客/" data-id="cj9y4rhni0002b6zqutd7i9hz" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/11/13/使用Github-Pages和hexo搭建博客/" data-id="cj9y4wxok0002bxzqqyl913dj" class="article-share-link">Share</a>
       
       
     </footer>
