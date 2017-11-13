@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Jen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is a blog site.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jen">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Jen">
+<meta property="og:description" content="This is a blog site.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Jen">
+<meta name="twitter:description" content="This is a blog site.">
+  
+    <link rel="alternate" href="/atom.xml" title="Jen" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Jen</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-使用Github-Pages和hexo搭建博客" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/11/13/使用Github-Pages和hexo搭建博客/" class="article-date">
+  <time datetime="2017-11-13T03:50:10.000Z" itemprop="datePublished">2017-11-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/11/13/使用Github-Pages和hexo搭建博客/">使用Github Pages和hexo搭建博客</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h2 id="使用Github-Pages和hexo搭建博客"><a href="#使用Github-Pages和hexo搭建博客" class="headerlink" title="使用Github Pages和hexo搭建博客"></a>使用Github Pages和hexo搭建博客</h2><p>相关文档地址：</p>
+<ol>
+<li><a href="https://hexo.io/docs/" target="_blank" rel="external">Hexo</a></li>
+<li><a href="https://pages.github.com/" target="_blank" rel="external">Github Pages</a></li>
+</ol>
+<h2 id="新建github仓库"><a href="#新建github仓库" class="headerlink" title="新建github仓库"></a>新建github仓库</h2><p>登录GitHub账号，新建一个名为 username.github.io 的仓库（此处username为你的GitHub用户名）</p>
+<h2 id="设置github-pages"><a href="#设置github-pages" class="headerlink" title="设置github pages"></a>设置github pages</h2><p>github上进入刚刚新建的项目，点击settings进入设置页面，找到GitHub Pages选项，将source设置为master branch。</p>
+<h2 id="全局安装hexo-cli"><a href="#全局安装hexo-cli" class="headerlink" title="全局安装hexo-cli"></a>全局安装hexo-cli</h2><p>在全局安装hexo-cli之前，请确保你已经安装了Node.js和Git<a href="具体安装可参看其他教程">^1</a>，然后在终端执行</p>
+<blockquote>
+<p>npm install -g hexo-cli  </p>
+</blockquote>
+<h2 id="配置并建立工作目录"><a href="#配置并建立工作目录" class="headerlink" title="配置并建立工作目录"></a>配置并建立工作目录</h2><p>hexo安装成功之后，执行以下操作：</p>
+<ol>
+<li>在目标文件夹初始化hexo<blockquote>
+<p>hexo init \<folder></folder></p>
+</blockquote>
+</li>
+<li>进入该文件夹<blockquote>
+<p>cd \<folder></folder></p>
+</blockquote>
+</li>
+<li>安装依赖<blockquote>
+<p>npm install</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="文件及文件夹说明"><a href="#文件及文件夹说明" class="headerlink" title="文件及文件夹说明"></a>文件及文件夹说明</h2><table>
+<thead>
+<tr>
+<th>文件</th>
+<th style="text-align:center">bird</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>_config.yml</td>
+<td style="text-align:center">站点配置文件</td>
+<td></td>
+</tr>
+<tr>
+<td>scaffolds</td>
+<td style="text-align:center">脚手架</td>
+<td></td>
+</tr>
+<tr>
+<td>source</td>
+<td style="text-align:center">站点源码</td>
+<td></td>
+</tr>
+<tr>
+<td>themes</td>
+<td style="text-align:center">主题文件夹</td>
+<td></td>
+</tr>
+<tr>
+<td>_posts</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h2><p>注：若title中包含空格，需要用引号把title引起来</p>
+<blockquote>
+<p>hexo new [layout] \<title></title></p>
+</blockquote>
+<p>##生成静态文件</p>
+<blockquote>
+<p>hexo generate</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">配置项</th>
+<th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-d, –deploy</td>
+<td style="text-align:center">生成后部署</td>
+</tr>
+<tr>
+<td style="text-align:center">-w, –watch</td>
+<td style="text-align:center">监听文件变化</td>
+</tr>
+</tbody>
+</table>
+<h2 id="发布草稿"><a href="#发布草稿" class="headerlink" title="发布草稿"></a>发布草稿</h2><blockquote>
+<p>hexo publish [layout] \<filename></filename></p>
+</blockquote>
+<h2 id="启动本地服务器"><a href="#启动本地服务器" class="headerlink" title="启动本地服务器"></a>启动本地服务器</h2><blockquote>
+<p>hexo server </p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">配置项</th>
+<th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-p, –port</td>
+<td style="text-align:center">配置本地服务器端口</td>
+</tr>
+<tr>
+<td style="text-align:center">-s, –static</td>
+<td style="text-align:center">Only serve static files</td>
+</tr>
+<tr>
+<td style="text-align:center">-l, –log</td>
+<td style="text-align:center">Enable logger. Override logger format.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><blockquote>
+<p>hexo deploy</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">配置项</th>
+<th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-p, –port</td>
+<td style="text-align:center">配置本地服务器端口</td>
+</tr>
+</tbody>
+</table>
+<h2 id="渲染"><a href="#渲染" class="headerlink" title="渲染"></a>渲染</h2><blockquote>
+<p>hexo render \<file1> [file2] …</file1></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">配置项</th>
+<th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-o, –output</td>
+<td style="text-align:center">output destination</td>
+</tr>
+</tbody>
+</table>
+<h2 id="从别的博客项目中迁移内容"><a href="#从别的博客项目中迁移内容" class="headerlink" title="从别的博客项目中迁移内容"></a>从别的博客项目中迁移内容</h2><blockquote>
+<p>hexo migrate \<type></type></p>
+</blockquote>
+<h2 id="清除缓存文件和生成文件（db-json、public）"><a href="#清除缓存文件和生成文件（db-json、public）" class="headerlink" title="清除缓存文件和生成文件（db.json、public）"></a>清除缓存文件和生成文件（db.json、public）</h2><blockquote>
+<p>hexo clean</p>
+</blockquote>
+<h2 id="罗列出所有的路由"><a href="#罗列出所有的路由" class="headerlink" title="罗列出所有的路由"></a>罗列出所有的路由</h2><blockquote>
+<p>hexo list \<type></type></p>
+</blockquote>
+<h2 id="查看hexo版本信息"><a href="#查看hexo版本信息" class="headerlink" title="查看hexo版本信息"></a>查看hexo版本信息</h2><blockquote>
+<p>hexo version</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/11/13/使用Github-Pages和hexo搭建博客/" data-id="cj9xnj7e200025szq7fx65wfe" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/11/13/hello-world/" class="article-date">
+  <time datetime="2017-11-13T03:48:40.000Z" itemprop="datePublished">2017-11-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h2 id="使用Github-Pages和hexo搭建博客"><a href="#使用Github-Pages和hexo搭建博客" class="headerlink" title="使用Github Pages和hexo搭建博客"></a>使用Github Pages和hexo搭建博客</h2><p>相关文档地址：</p>
+<ol>
+<li><a href="https://hexo.io/docs/" target="_blank" rel="external">Hexo</a></li>
+<li><a href="https://pages.github.com/" target="_blank" rel="external">Github Pages</a></li>
+</ol>
+<p>##新建github仓库<br>登录GitHub账号，新建一个名为 username.github.io 的仓库（此处username为你的GitHub用户名）</p>
+<p>##设置github pages<br>github上进入刚刚新建的项目，点击settings进入设置页面，找到GitHub Pages选项，将source设置为master branch。</p>
+<p>##全局安装hexo-cli<br>在全局安装hexo-cli之前，请确保你已经安装了Node.js和Git<a href="具体安装可参看其他教程">^1</a>，然后在终端执行</p>
+<blockquote>
+<p>npm install -g hexo-cli  </p>
+</blockquote>
+<p>##配置并建立工作目录<br>hexo安装成功之后，执行以下操作：</p>
+<ol>
+<li>在目标文件夹初始化hexo<blockquote>
+<p>hexo init \<folder></folder></p>
+</blockquote>
+</li>
+<li>进入该文件夹<blockquote>
+<p>cd \<folder></folder></p>
+</blockquote>
+</li>
+<li>安装依赖<blockquote>
+<p>npm install</p>
+</blockquote>
+</li>
+</ol>
+<p>##文件及文件夹说明<br>文件         | bird                   |<br>————|:———————-:|<br>_config.yml | 站点配置文件             |<br>scaffolds   | 脚手架                  |<br>source      | 站点源码             |<br>themes      | 主题文件夹           |<br>_posts      |  |</p>
+<table>
+<thead>
+<tr>
+<th>dog</th>
+<th>bird</th>
+<th>cat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>foo</td>
+<td>foo</td>
+<td>foo</td>
+</tr>
+<tr>
+<td>bar</td>
+<td>bar</td>
+<td>bar</td>
+</tr>
+<tr>
+<td>baz</td>
+<td>baz</td>
+<td>baz</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th style="text-align:center">Are</th>
+<th style="text-align:right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td style="text-align:center">right-aligned</td>
+<td style="text-align:right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td style="text-align:center">centered</td>
+<td style="text-align:right">$12</td>
+</tr>
+<tr>
+<td>zebra stripes</td>
+<td style="text-align:center">are neat</td>
+<td style="text-align:right">$1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="JS-code"><a href="#JS-code" class="headerlink" title="JS code"></a>JS code</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">toast</span>(<span class="params">msg</span>)</span>&#123;</span><br><span class="line">    alert(msg);</span><br><span class="line">&#125;</span><br><span class="line">toast(<span class="string">'hello world'</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/11/13/hello-world/" data-id="cj9xnj7e000015szqs5fkgyql" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Markdown语法学习" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/11/13/Markdown语法学习/" class="article-date">
+  <time datetime="2017-11-13T03:45:43.000Z" itemprop="datePublished">2017-11-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/11/13/Markdown语法学习/">Markdown语法学习</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/11/13/Markdown语法学习/" data-id="cj9xnj7dw00005szq44qhfdyo" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">November 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/11/13/使用Github-Pages和hexo搭建博客/">使用Github Pages和hexo搭建博客</a>
+          </li>
+        
+          <li>
+            <a href="/2017/11/13/hello-world/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/11/13/Markdown语法学习/">Markdown语法学习</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 Jen Han<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
