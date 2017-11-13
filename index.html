@@ -97,17 +97,17 @@
 <h2 id="全局安装hexo-cli"><a href="#全局安装hexo-cli" class="headerlink" title="全局安装hexo-cli"></a>全局安装hexo-cli</h2><p>在全局安装hexo-cli之前，请确保你已经安装了Node.js和Git，然后在终端执行</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 <h2 id="配置并建立工作目录"><a href="#配置并建立工作目录" class="headerlink" title="配置并建立工作目录"></a>配置并建立工作目录</h2><p>hexo安装成功之后，执行以下操作：</p>
-<ol>
+<ul>
 <li>在目标文件夹初始化hexo</li>
-</ol>
+</ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init &lt;folder&gt;</span><br></pre></td></tr></table></figure>
-<ol>
+<ul>
 <li>进入该文件夹</li>
-</ol>
+</ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd &lt;folder&gt;</span><br></pre></td></tr></table></figure>
-<ol>
+<ul>
 <li>安装依赖</li>
-</ol>
+</ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
 <h2 id="文件及文件夹说明"><a href="#文件及文件夹说明" class="headerlink" title="文件及文件夹说明"></a>文件及文件夹说明</h2><table>
 <thead>
@@ -133,11 +133,9 @@
 <td style="text-align:center">themes</td>
 <td style="text-align:center">主题文件夹</td>
 </tr>
-<tr>
-<td style="text-align:center">_posts</td>
-</tr>
 </tbody>
 </table>
+<p>#| _posts        |                |    </p>
 <h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h2><p>注：若title中包含空格，需要用引号把title引起来<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure></p>
 <h2 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
 <table>
@@ -159,7 +157,8 @@
 </tbody>
 </table>
 <h2 id="发布草稿"><a href="#发布草稿" class="headerlink" title="发布草稿"></a>发布草稿</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo publish [layout] &lt;filename&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="启动本地服务器"><a href="#启动本地服务器" class="headerlink" title="启动本地服务器"></a>启动本地服务器</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<p>注：若要发布source/_draft文件夹中内容，需先执行此命令将其转移至source/_post文件夹</p>
+<h2 id="启动本地服务器"><a href="#启动本地服务器" class="headerlink" title="启动本地服务器"></a>启动本地服务器</h2><p>打开localhost:4000,就可以在本地预览博客效果啦~<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure></p>
 <table>
 <thead>
 <tr>
@@ -183,7 +182,10 @@
 </tbody>
 </table>
 <p>eg:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server -p 5000</span><br></pre></td></tr></table></figure></p>
-<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+<p>##部署前的一些配置<br>打开根目录的_config.yml文件，找到deploy配置项，做如下配置(这里我用的是git，你也可以用别的，hexo官网文档有详细说明)：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/wuhouz/wuhouz.github.io.git</span><br><span class="line">  branch: master</span><br><span class="line">  message: here is commit message</span><br></pre></td></tr></table></figure></p>
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><p>第一次部署时，需要输入你的github用户名和密码，按照提示输入即可<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure></p>
+<h2 id="清除缓存文件和生成文件（db-json、public）"><a href="#清除缓存文件和生成文件（db-json、public）" class="headerlink" title="清除缓存文件和生成文件（db.json、public）"></a>清除缓存文件和生成文件（db.json、public）</h2><p>非首次deploy，最好都清下缓存<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure></p>
+<p>#其他知识点（非完全版）</p>
 <table>
 <thead>
 <tr>
@@ -214,14 +216,13 @@
 </tbody>
 </table>
 <h2 id="从别的博客项目中迁移内容"><a href="#从别的博客项目中迁移内容" class="headerlink" title="从别的博客项目中迁移内容"></a>从别的博客项目中迁移内容</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo migrate &lt;type&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="清除缓存文件和生成文件（db-json、public）"><a href="#清除缓存文件和生成文件（db-json、public）" class="headerlink" title="清除缓存文件和生成文件（db.json、public）"></a>清除缓存文件和生成文件（db.json、public）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
 <h2 id="罗列出所有的路由"><a href="#罗列出所有的路由" class="headerlink" title="罗列出所有的路由"></a>罗列出所有的路由</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo list \&lt;type&gt;</span><br></pre></td></tr></table></figure>
 <h2 id="查看hexo版本信息"><a href="#查看hexo版本信息" class="headerlink" title="查看hexo版本信息"></a>查看hexo版本信息</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo version</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/11/13/使用Github-Pages和hexo搭建博客/" data-id="cj9y4wxok0002bxzqqyl913dj" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/11/13/使用Github-Pages和hexo搭建博客/" data-id="cj9y5f48j0002d4zq9xi49nqp" class="article-share-link">Share</a>
       
       
     </footer>
@@ -257,7 +258,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/11/13/Markdown语法学习/" data-id="cj9y4wxoj0001bxzqe2n4bzzr" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/11/13/Markdown语法学习/" data-id="cj9y5f48h0001d4zqfk57ttsq" class="article-share-link">Share</a>
       
       
     </footer>
