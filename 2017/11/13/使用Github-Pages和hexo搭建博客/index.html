@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/11/13/使用Github-Pages和hexo搭建博客/index.html">
 <meta property="og:site_name" content="Jen">
 <meta property="og:description" content="使用Github Pages和hexo搭建博客相关文档地址：  Hexo Github Pages  新建github仓库登录GitHub账号，新建一个名为 username.github.io 的仓库（此处username为你的GitHub用户名） 设置github pagesgithub上进入刚刚新建的项目，点击settings进入设置页面，找到GitHub Pages选项，将source设">
-<meta property="og:updated_time" content="2017-11-13T08:04:34.000Z">
+<meta property="og:updated_time" content="2017-11-13T11:45:33.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用Github Pages和hexo搭建博客">
 <meta name="twitter:description" content="使用Github Pages和hexo搭建博客相关文档地址：  Hexo Github Pages  新建github仓库登录GitHub账号，新建一个名为 username.github.io 的仓库（此处username为你的GitHub用户名） 设置github pagesgithub上进入刚刚新建的项目，点击settings进入设置页面，找到GitHub Pages选项，将source设">
@@ -94,65 +94,42 @@
 <h2 id="新建github仓库"><a href="#新建github仓库" class="headerlink" title="新建github仓库"></a>新建github仓库</h2><p>登录GitHub账号，新建一个名为 username.github.io 的仓库（此处username为你的GitHub用户名）</p>
 <h2 id="设置github-pages"><a href="#设置github-pages" class="headerlink" title="设置github pages"></a>设置github pages</h2><p>github上进入刚刚新建的项目，点击settings进入设置页面，找到GitHub Pages选项，将source设置为master branch。</p>
 <h2 id="全局安装hexo-cli"><a href="#全局安装hexo-cli" class="headerlink" title="全局安装hexo-cli"></a>全局安装hexo-cli</h2><p>在全局安装hexo-cli之前，请确保你已经安装了Node.js和Git<a href="具体安装可参看其他教程">^1</a>，然后在终端执行</p>
-<blockquote>
-<p>npm install -g hexo-cli  </p>
-</blockquote>
-<h2 id="配置并建立工作目录"><a href="#配置并建立工作目录" class="headerlink" title="配置并建立工作目录"></a>配置并建立工作目录</h2><p>hexo安装成功之后，执行以下操作：</p>
-<ol>
-<li>在目标文件夹初始化hexo<blockquote>
-<p>hexo init \<folder></folder></p>
-</blockquote>
-</li>
-<li>进入该文件夹<blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">    npm install -g hexo-cli</span><br><span class="line">```   </span><br><span class="line"></span><br><span class="line">## 配置并建立工作目录</span><br><span class="line">hexo安装成功之后，执行以下操作：</span><br><span class="line">1. 在目标文件夹初始化hexo</span><br></pre></td></tr></table></figure>
+<p>hexo init \<folder><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2. 进入该文件夹</span><br></pre></td></tr></table></figure></folder></p>
 <p>cd \<folder></folder></p>
-</blockquote>
-</li>
-<li>安装依赖<blockquote>
-<p>npm install</p>
-</blockquote>
-</li>
-</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3. 安装依赖</span><br></pre></td></tr></table></figure>
+<p>npm install<br>``` </p>
 <h2 id="文件及文件夹说明"><a href="#文件及文件夹说明" class="headerlink" title="文件及文件夹说明"></a>文件及文件夹说明</h2><table>
 <thead>
 <tr>
-<th>文件</th>
-<th style="text-align:center">bird</th>
+<th style="text-align:center">文件</th>
+<th style="text-align:center">描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>_config.yml</td>
+<td style="text-align:center">_config.yml</td>
 <td style="text-align:center">站点配置文件</td>
-<td></td>
 </tr>
 <tr>
-<td>scaffolds</td>
+<td style="text-align:center">scaffolds</td>
 <td style="text-align:center">脚手架</td>
-<td></td>
 </tr>
 <tr>
-<td>source</td>
+<td style="text-align:center">source</td>
 <td style="text-align:center">站点源码</td>
-<td></td>
 </tr>
 <tr>
-<td>themes</td>
+<td style="text-align:center">themes</td>
 <td style="text-align:center">主题文件夹</td>
-<td></td>
 </tr>
 <tr>
-<td>_posts</td>
-<td style="text-align:center"></td>
-<td></td>
+<td style="text-align:center">_posts</td>
 </tr>
 </tbody>
 </table>
-<h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h2><p>注：若title中包含空格，需要用引号把title引起来</p>
-<blockquote>
-<p>hexo new [layout] \<title></title></p>
-</blockquote>
-<p>##生成静态文件</p>
-<blockquote>
+<h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h2><p>注：若title中包含空格，需要用引号把title引起来<br><code>hexo new [layout] \&lt;title&gt;</code></p>
+<h2 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h2><blockquote>
 <p>hexo generate</p>
 </blockquote>
 <table>
@@ -252,7 +229,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/11/13/使用Github-Pages和hexo搭建博客/" data-id="cj9y0fs82000318zqzw7aewoq" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/11/13/使用Github-Pages和hexo搭建博客/" data-id="cj9y4i94t00028lzqtvif9mqe" class="article-share-link">Share</a>
       
       
     </footer>
